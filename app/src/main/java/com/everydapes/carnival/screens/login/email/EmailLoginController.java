@@ -1,13 +1,12 @@
 package com.everydapes.carnival.screens.login.email;
 
 import android.Manifest;
-import android.app.LoaderManager;
-import android.database.Cursor;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import com.everydapes.carnival.BaseApplication;
 import com.everydapes.carnival.R;
@@ -17,6 +16,7 @@ import com.tbruyelle.rxpermissions2.RxPermissions;
 import javax.inject.Inject;
 import javax.inject.Provider;
 
+import butterknife.BindView;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 
@@ -27,6 +27,18 @@ public class EmailLoginController extends BaseMvpController<EmailLoginView, Emai
 
     @Inject
     Provider<EmailLoginPresenter> presenterProvider;
+    @BindView(R.id.password)
+    EditText password;
+    @BindView(R.id.email)
+    EditText email;
+    @BindView(R.id.login)
+    TextView login;
+    @BindView(R.id.facebook)
+    TextView facebook;
+    @BindView(R.id.google)
+    TextView google;
+    @BindView(R.id.register)
+    TextView register;
 
     @Override
     protected View inflateView(@NonNull LayoutInflater inflater, @NonNull ViewGroup container) {
