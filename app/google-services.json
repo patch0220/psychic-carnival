@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "530245156222",
+    "firebase_url": "https://psychic-carnival.firebaseio.com",
+    "project_id": "psychic-carnival",
+    "storage_bucket": "psychic-carnival.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530245156222:android:2918ad754c02676c",
+        "android_client_info": {
+          "package_name": "com.everydapes.carnival"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530245156222-1pagrls75lkhiol8fdb3vgad8qq0a692.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.everydapes.carnival",
+            "certificate_hash": "eb761109ae06e1b733f69f25c7065119b385865f"
+          }
+        },
+        {
+          "client_id": "530245156222-fphv4lt439v8sejc8nlg3rd8cf52uf59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb-joqqqL1oZ70tHMfqvkhXHh3AzSejhY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530245156222-fphv4lt439v8sejc8nlg3rd8cf52uf59.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
