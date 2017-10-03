@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.everydapes.carnival.BaseApplication;
 import com.everydapes.carnival.R;
 import com.everydapes.carnival.base.BaseMvpController;
+import com.everydapes.carnival.data.models.User;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.tbruyelle.rxpermissions2.RxPermissions;
@@ -49,15 +50,15 @@ public class EmailLoginController extends BaseMvpController<EmailLoginView, Emai
 
     @Override
     protected void onViewBound(@NonNull View view) {
-        User user = new User();
-        user.setFirstName("Patch");
-        user.setLastName("Datu");
+        /*User user = new User();
+        user.setFirstName("Patch2");
+        user.setLastName("Datu2");
 
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("user");
 
-        myRef.setValue(user);
+        myRef.setValue(user);*/
     }
 
     @Override
@@ -94,28 +95,6 @@ public class EmailLoginController extends BaseMvpController<EmailLoginView, Emai
 
                     }
                 });
-    }
-
-    class User {
-
-        private String firstName;
-        private String lastName;
-
-        public String getFirstName() {
-            return firstName;
-        }
-
-        public void setFirstName(String firstName) {
-            this.firstName = firstName;
-        }
-
-        public String getLastName() {
-            return lastName;
-        }
-
-        public void setLastName(String lastName) {
-            this.lastName = lastName;
-        }
     }
 
 }

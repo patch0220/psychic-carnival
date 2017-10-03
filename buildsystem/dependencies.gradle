@@ -5,7 +5,8 @@ ext {
     greenDaoVersion = '3.1.1'
     eventBusVersion = '3.0.0'
     letterDrawableVersion = '1.0.1'
-    firebaseVersion = '10.2.1'
+    playServicesVersion = '11.4.0'
+    firebaseVersion = '10.0.1'
     firebaseUiVersion = '0.4.4'
     mixPanelVersion = '4.9.8'
     timberVersion = '4.5.1'
@@ -58,9 +59,10 @@ ext {
             design              : "com.android.support:design:$supportLibraryVersion",
             cardView            : "com.android.support:cardview-v7:$supportLibraryVersion",
             recyclerView        : "com.android.support:recyclerview-v7:$supportLibraryVersion",
-            playServicesPlaces  : "com.google.android.gms:play-services-places:$firebaseVersion",
-            playServicesLocation: "com.google.android.gms:play-services-location:$firebaseVersion",
+            // playServicesPlaces  : "com.google.android.gms:play-services-places:$playServicesVersion",
+            // playServicesLocation: "com.google.android.gms:play-services-location:$playServicesVersion",
             playServicesGcm     : "com.google.android.gms:play-services-gcm:$firebaseVersion",
+            realtimeDatabase    : "com.google.firebase:firebase-database:$firebaseVersion",
     ]
 
     appCompileDependencies = [
@@ -74,7 +76,7 @@ ext {
             rxJava2                 : "io.reactivex.rxjava2:rxjava:$rxJava2Version",
             rxAndroid2              : "io.reactivex.rxjava2:rxandroid:$rxAndroid2Version",
             reactivePermissions     : "com.tbruyelle.rxpermissions2:rxpermissions:$reactivePermissionsVersion",
-            reactiveNetwork         : "com.github.pwittchen:reactivenetwork:$reactiveNetworkVersion",
+            // reactiveNetwork         : "com.github.pwittchen:reactivenetwork:$reactiveNetworkVersion",
             mosby                   : "com.hannesdorfmann.mosby:mvp:$mosbyVersion",
             mosbyConductor          : "com.hannesdorfmann.mosby:mvp-conductor:$mosbyConductorVersion",
             butterknife             : "com.jakewharton:butterknife:$butterknifeVersion",
